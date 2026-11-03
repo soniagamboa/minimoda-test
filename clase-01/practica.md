@@ -40,8 +40,8 @@
 3. ___Alucinaciones: Baja cantidad de inventos, requiriendo únicamente una pequeña revisión visual frente al formulario real de MiniModa___
 
 ## 6. Mis 3 mejores casos (cargados en Qase, proyecto MiniModa)
-Formato del título: `Registro: <qué se prueba>`
-Captura de la suite en Qase con tus casos: `evidencias/qase-suite-casos.png`
+
+
 
 ### Caso 1: ___Registro exitoso con credenciales válidas___
 - Precondiciones: ___El usuario se encuentra en la página de registro de MiniModa___
