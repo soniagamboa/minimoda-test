@@ -14,12 +14,12 @@
 ## 3. Preguntas a Gemini
 | # | Pregunta | Respuesta (resumen) | ¿Acierto o error/invento? |
 |---|----------|---------------------|---------------------------|
-| 1 | ¿Qué campos pide el formulario de registro de https://minimoda-navy.vercel.app/registro? | ___Nombre, correo electrónico, contraseña y confirmación de contraseña___ | ___Acierto___ |
+| 1 | ¿Qué campos pide el formulario de registro de https://minimoda-navy.vercel.app/registro? | ___Nombre, correo electrónico, contraseña y confirmación de contraseña___ | ___Error/Invento___ |
 | 2 | ¿Cuál es el largo mínimo de la contraseña y qué edad se permite? | ___Requiere un mínimo de 6 caracteres para la contraseña___ | ___Error / Invento___ |
 | 3 | ¿Qué pasa si no acepto los términos? | ___El sistema no permite completar ni enviar el registro si no se marcan o aceptan los terminos y condiciones obligatorios___ | ___Acierto___ |
 
-- Un acierto: ___Identificó con precisión los campos obligatorios que contiene el formulario de registro de MiniModa___
-- Un error o invento: ___Asumió un requisito de longitud mínima de contraseña diferente al que realmente exige la interfaz web___
+- Un acierto: ___Identificó correctamente la validación de los términos y condiciones obligatorios___
+- Un error o invento: ___Omitió varios campos obligatorios del formulario al listar los requeridos y asumió un requisito de longitud de contraseña diferente al real___
 
 ## 4. Primer modo
 - Superficie y modo: ___Chat___
@@ -55,10 +55,10 @@ Captura de la suite en Qase con tus casos: `evidencias/qase-suite-casos.png`
 - Resultado esperado: ___El sistema muestra un mensaje de error indicando que la contraseña no cumple con los requisitos minimos de seguridad y no permite avanzar con el registro___
 - Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&previewMode=modal&case=2`
 
-### Caso 3: ___Restricción de registro con correo electrónico duplicado___
-- Precondiciones: ___Existe una cuenta previa registrada con un correo determinado___
-- Pasos: ___1. Ingresar un nombre válido en el campo "Nombre". 2. Ingresar en el campo de correo una dirección que ya esté registrada en el sistema. 3. Ingresar una contraseña válida en el campo "Contraseña". 4. Hacer clic en registrarse___
-- Resultado esperado: ___El sistema rechaza la solicitud de registro de manera controlada e impide la creación de la cuenta duplicada. Asimismo, presenta una notificación de error clara en la interfaz que informa que la dirección de correo electrónico ya se encuentra asociada a una cuenta existente en el sistema___
+### Caso 3: ___Restricción de registro con edad de menor rango permitido___
+- Precondiciones: ___El usuario se encuentra en la pagina de registro de MiniModa___
+- Pasos: ___1. Ingresar un nombre válido en el campo "Nombre" (ej. Ana). 2. Ingresar un correo electronico valido y no registrado (ej. ana.prueba@example.com ). 3. Ingresar una contraseña válida (ej. clave123 ). 4. Ingresar el numero 12 en el campo de edad. 5. Hacer clic en el boton "Crear cuenta"___
+- Resultado esperado: ___El sistema bloquea el envio del formulario y muestra exactamente el mensaje de error: "La edad debe estar entre los 13 y 120"___
 - Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&previewMode=modal&case=3`
 
 ## 7. Mapa del harness
