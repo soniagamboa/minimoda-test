@@ -45,14 +45,14 @@
 
 ### Caso 1: ___Registro exitoso con credenciales válidas___
 - Precondiciones: ___El usuario se encuentra en la página de registro de MiniModa___
-- Pasos: ___1. Ingresar un nombre válido en el campo "Nombre". 2. Ingresar un correo electrónico nuevo válido y no registrado previamente. 3. Ingresar una contraseña segura en el campo "Contraseña". 4. Completar los campos requeridos y aceptar términos. 5. Hacer clic en Registrarse.___
-- Resultado esperado: ___El registro se completa con exito y el sistema te envia un correo de confirmacion y te redirige al usuario.___
-- Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&previewMode=side&case=1`
+- Pasos: ___1. Ingresar un nombre válido en el campo "Nombre" (ej. Sofia). 2. Ingresar un correo electrónico nuevo válido y no registrado previamente (ej. sofia.test@example.com ). 3. Ingresar una contraseña segura en el campo "Contraseña" (ej. segura123 ). 4. Ingresar la misma contraseña en "confirmar contraseña" (ej. segura123 ). 5. Completar la edad dentro del rango permitido (ej. 25 ), seleccionar el país y marcar la casilla de aceptar términos. 6. Hacer clic en el botón "Crear Cuenta".___
+- Resultado esperado: ___El registro se completa con exito, el sistema redirige al usuario y muestra mensaje de bienvenida o confirmacion correspondiente.___
+- Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&case=1`
 
 ### Caso 2: ___Validación de contraseña con menos caracteres de los requeridos___
 - Precondiciones: ___El usuario se encuentra en la página de registro___
-- Pasos: ___1.Completar el campo "Nombre" con un nombre válido. 2.Completar el campo "Correo" con un correo válido . 3.Ingresar una contraseña corta o inválida en el campo "Contraseña" 4. Hacer clic en el botón de registrarse___
-- Resultado esperado: ___El sistema muestra un mensaje de error indicando que la contraseña no cumple con los requisitos minimos de seguridad y no permite avanzar con el registro___
+- Pasos: ___1.Ingresar un nombre válido en el campo "Nombre" (ej. Lucas). 2.Ingresar un correo válido y no registrado (ej. lucas.test@example.com). 3. Ingresar una contraseña corta que no cumpla el mínimo de caracteres (ej. 123). 4. Completar los campos obligatorios restantes (edad, país y aceptación de términos). 5. Hacer clic en el botón "Crear cuenta".___ 
+- Resultado esperado: ___El sistema bloquea el envío del formulario y muestra un mensaje de error indicando que la contraseña no cumple con la longitud mínima requerida.___
 - Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&previewMode=modal&case=2`
 
 ### Caso 3: ___Restricción de registro con edad de menor rango permitido___
