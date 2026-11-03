@@ -59,7 +59,7 @@
 - Precondiciones: ___El usuario se encuentra en la pagina de registro de MiniModa___
 - Pasos: ___1. Ingresar un nombre válido en el campo "Nombre" (ej. Ana). 2. Ingresar un correo electronico valido y no registrado (ej. ana.prueba@example.com ). 3. Ingresar una contraseña válida (ej. clave123 ). 4. Ingresar el numero 12 en el campo de edad. 5. Hacer clic en el boton "Crear cuenta"___
 - Resultado esperado: ___El sistema bloquea el envio del formulario y muestra exactamente el mensaje de error: "La edad debe estar entre los 13 y 120"___
-- Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&previewMode=modal&case=3`
+- Evidencia: `https://app.qase.io/project/MINIMODA?suite=0&case=3`
 
 ## 7. Mapa del harness
 | Pieza | En lo que usé |
