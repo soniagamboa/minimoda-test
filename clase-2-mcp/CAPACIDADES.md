@@ -21,7 +21,7 @@
 
 ## 3. Comparativa y Ahorro de Tiempo (Manual vs. MCP)
 - **Proceso manual:** 
-  - Navegar la tienda, tomar capturas de pantalla manualmente y redactar un caso de prueba detallado con formato Markdown, pasos, datos y resultados esperados toma entre **10 y 15 minutos** de trabajo continuo.
+  - Navegar la tienda, tomar capturas de pantalla manualmente y redactar un caso de prueba detallado con formato Markdown, pasos, datos y resultados esperados tomo **18 minutos y 55 segundos** de trabajo continuo.
 - **Proceso con Agente y MCP:** 
   - El flujo combinado completo (ejecución web con Playwright y generación del caso de prueba con el MCP propio) tomó menos de **2 minutos y 30 segundos** en total.
-- **Tiempo ahorrado:** Representa un ahorro estimado de **8 a 13 minutos por ciclo**, logrando una optimización y eficiencia superior al **80%** en tareas repetitivas de QA.
+- **Tiempo ahorrado:** **16 minutos y 25 segundos** 
