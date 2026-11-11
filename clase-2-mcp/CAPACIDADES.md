@@ -16,7 +16,6 @@
   - Creó y guardó automáticamente el archivo Markdown en la ruta `casos/agregar-un-producto-con-stock-al-carrito-en-minimo-797c26d7-6935-4ae8-950e-209ff60dd089.md`.
   - Verificó la existencia y correcta persistencia del archivo utilizando la herramienta `listar_casos`.
 - **Tiempo de ejecución:** 1 minuto y 11 segundos.
-- **Límites técnicos encontrados:** El sistema utiliza slugs automáticos para evitar colisiones en los nombres de archivos, requiriendo una consulta explícita del listado para obtener el identificador exacto generado.
 
 ---
 
